@@ -2,7 +2,6 @@ package com.jmmall.demo.model;
 
 import java.io.Serializable;
 import java.util.Date;
-
 /**
  * 用户
  * @author Administrator

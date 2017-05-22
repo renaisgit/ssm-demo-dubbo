@@ -1,5 +1,6 @@
 <#macro commonMETA>
 <meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta content="always" name="referrer">
 <meta name="theme-color" content="#2932e1">
@@ -14,7 +15,6 @@
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
-<script src="${jsRoot}/js/ie10-viewport-bug-workaround.js"></script>
 </#macro>
     
  

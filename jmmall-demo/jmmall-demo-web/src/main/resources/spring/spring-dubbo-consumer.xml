@@ -13,6 +13,9 @@
     <dubbo:registry address="zookeeper://127.0.0.1:2181" />
  
     <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
-    <dubbo:reference id="userService" interface="com.jmmall.demo.service.api.UserService" check="false" />
+    <dubbo:reference id="userService" interface="com.jmmall.demo.service.api.UserService" check="false" >
+    	 <dubbo:method name="findPageByQuery" cache="cs" /><!-- 引入缓存，除特殊场景外慎用!!! -->
+    	 <dubbo:method name="findByQuery" async="true" sent="true" /><!-- 引入缓存，除特殊场景外慎用!!! -->
+    </dubbo:reference>
  
 </beans>

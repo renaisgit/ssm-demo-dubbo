@@ -62,7 +62,7 @@
 		<property name="suffix" value=".ftl" />
 		<property name="contentType" value="text/html;charset=utf-8" />
 		<property name="viewClass">
-			<value>org.springframework.web.servlet.view.freemarker.FreeMarkerView</value>
+			<value>com.jmmall.demo.common.web.freemaker.FreeMarkerViewExtend</value>
 		</property>
 	</bean>
 	<bean id="freemarkerConfiguration" class="org.springframework.beans.factory.config.PropertiesFactoryBean">  
@@ -77,8 +77,6 @@
 		<property name="freemarkerVariables">
 			<map>
 				<entry key="xml_escape" value-ref="fmXmlEscape" />
-				<entry key="webRoot" value="${webRoot}"></entry>
-                <entry key="jsRoot" value="${jsRoot}"></entry>
 			</map>
 		</property>
 	</bean>
