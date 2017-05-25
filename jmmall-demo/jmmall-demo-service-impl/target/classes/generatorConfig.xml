@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<!--<properties resource="mybatis-generator.properties" /> -->
+	<!-- classPathEntry:数据库的JDBC驱动 -->
+	<properties resource="config/connection.properties" />
+	<context id="Mysql" targetRuntime="MyBatis3">
+		<!-- 生成的pojo，将implements Serializable -->
+		<plugin type="org.mybatis.generator.plugins.SerializablePlugin"></plugin>
+		<plugin type="org.mybatis.generator.plugins.CaseInsensitiveLikePlugin" />
+		<plugin type="org.mybatis.generator.plugins.RenameExampleClassPlugin">
+			<property name="searchString" value="Example$" />
+			<property name="replaceString" value="Criteria" />
+		</plugin>
+		<commentGenerator>
+			<!-- 删除代码中带有 代码生成器的注释信息 -->
+			<property name="suppressAllComments" value="true" />
+			<property name="suppressDate" value="true" />
+		</commentGenerator>
+		<!--数据库连接信息。 -->
+		<jdbcConnection driverClass="${jdbc.driverClassName}" connectionURL="${jdbc.url}" userId="${jdbc.username}" password="${jdbc.password}" />
+		<javaTypeResolver>
+			<property name="forceBigINTEGERs" value="false" />
+		</javaTypeResolver>
+		<!-- targetProject:自动生成代码的位置 -->
+		<javaModelGenerator targetPackage="com.ssm.demo.models" targetProject="./src/main/java">
+			<property name="enableSubPackages" value="false" />
+			<!-- 从数据库返回的值被清理前后的空格 -->
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+		<sqlMapGenerator targetPackage="mapper" targetProject="./src/main/resources">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+		<javaClientGenerator targetPackage="com.ssm.demo.mapper" targetProject="./src/main/java" type="XMLMAPPER">
+			<property name="enableSubPackages" value="false" />
+		</javaClientGenerator>
+		<!-- tableName:用于自动生成代码的数据库表；domainObjectName:对应于数据库表的javaBean类名 -->
+
+		<table schema="" tableName="SYS_USER" domainObjectName="SysUser" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+		</table>
+	</context>
+</generatorConfiguration>
