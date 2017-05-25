@@ -1,3 +1,3 @@
 #Dubbo Registry Cache
-#Mon Jan 23 10:11:51 CST 2017
-com.jmmall.demo.service.api.UserService=empty\://192.168.120.176\:21346/com.jmmall.demo.service.api.UserService?anyhost\=true&application\=jmmall-demo-test&category\=configurators&check\=false&dubbo\=2.5.3&interface\=com.jmmall.demo.service.api.UserService&methods\=findPageByQuery,findByQuery&pid\=6988&side\=provider&timestamp\=1485137511207
+#Wed May 24 14:59:39 CST 2017
+com.jmmall.demo.service.api.UserService=empty\://192.168.120.176\:21346/com.jmmall.demo.service.api.UserService?anyhost\=true&application\=jmmall-demo-test&category\=configurators&check\=false&dubbo\=2.5.3&interface\=com.jmmall.demo.service.api.UserService&methods\=findPageByQuery,findByQuery&pid\=10592&side\=provider&timestamp\=1495609179056

@@ -7,16 +7,14 @@
 	</parent>
 	<groupId>com.jmmall.demo</groupId>
 	<artifactId>jmmall-demo</artifactId>
-	<version>${jmmall-demo.version}</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-
+	
 	<modules>
 		<module>jmmall-demo-common</module>
 		<module>jmmall-demo-common-core</module>
 		<module>jmmall-demo-common-web</module>
 		<module>jmmall-demo-common-config</module>
-		<module>jmmall-demo-service-shiro-api</module>
-		<module>jmmall-demo-service-shiro-impl</module>
 		<module>jmmall-demo-service-api</module>
 		<module>jmmall-demo-service-impl</module>
 		<module>jmmall-demo-web</module>
